@@ -1,18 +1,5 @@
-# sinatra-template
+This is a project dedicated to anyone who wants to learn some of MY techniques on how I bass fish. 
 
-Use this repository to create new Sinatra apps. 
+I will try to be updating this as much as I can as I get more experience. Hopefully a blog feature will be coming soon!
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
-
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+Best of luck fishing and remember to keep lines tight! - Jun 9/24/2023
