@@ -25,7 +25,7 @@ end
 
 get("/baitfinder") do
 
-gmaps_key = ENV.fetch("GMAPS_KEY")
+gmaps_key = ENV["GMAPS_KEY"]
 location = params.fetch("location")
 gmaps_url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{location}&key=#{gmaps_key}"
 raw_gmaps = HTTP.get(gmaps_url)
@@ -39,7 +39,7 @@ lat = location_hash.fetch("lat");
 @loc = location
 @loc2 = location
 
-pirate_key = ENV.fetch("PIRATE_WEATHER_KEY")
+pirate_key = ENV["PIRATE_WEATHER_KEY"]
 pirate_url = "https://api.pirateweather.net/forecast/#{pirate_key}/#{lat},#{long}"
 raw_pirate_data = HTTP.get(pirate_url)
 parsed_pirate_data = JSON.parse(raw_pirate_data)
